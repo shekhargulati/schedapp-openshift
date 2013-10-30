@@ -1,3 +1,5 @@
-The OpenShift `python` cartridge documentation can be found at:
+## Run on OpenShift##
 
-https://github.com/openshift/origin-server/tree/master/cartridges/openshift-origin-cartridge-python/README.md
+```
+rhc create-app schedapp python-2.7 postgresql-9.2 --from-code=https://github.com/shekhargulati/schedapp-openshift.git
+```
