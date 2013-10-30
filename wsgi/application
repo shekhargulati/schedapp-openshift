@@ -12,6 +12,5 @@ except IOError:
 # line, it's possible required libraries won't be in your searchable path
 # 
 
-from sched import app as application
-from sched import *
+from sched.app import app as application, db
 db.create_all()
