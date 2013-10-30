@@ -86,7 +86,7 @@ class Appointment(Base):
     created = Column(DateTime, default=datetime.now)
     modified = Column(DateTime, default=datetime.now, onupdate=datetime.now)
 
-    user_id = Column(Integer, ForeignKey('user.id'), nullable=False)
+    user_id = Column(Integer, ForeignKey('users.id'), nullable=False)
     user = relationship(User, lazy='joined', join_depth=1, viewonly=True)
 
     title = Column(String(255))
